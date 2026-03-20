@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aayush Randeep — Computational Cosmology & Scientific Computing</title>
+  <meta name="description" content="Aayush Randeep – BS-MS Physics student at IISER Bhopal. Research in computational cosmology, HPC, scientific software development, GPU-accelerated solvers, and parallel algorithm design.">
+  <meta name="keywords" content="Aayush Randeep, computational cosmology, HPC, scientific computing, scientific software, GPU, parallel programming, IISER Bhopal, physics">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Starfield Background -->
+  <canvas id="starfield"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <a href="#" class="nav__logo">aayush<span>.randeep</span></a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#publications">Papers</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="main">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <p class="hero__greeting">// hello, world</p>
+      <h1 class="hero__name">
+        I'm <span class="gradient-text">Aayush Randeep</span>
+      </h1>
+      <p class="hero__tagline">
+        Computational Cosmology
+        <span class="sep">·</span>
+        High Performance Computing
+        <span class="sep">·</span>
+        Scientific Software
+      </p>
+      <div class="hero__cta">
+        <a href="Aayush_Randeep_CV_0226.pdf" class="btn btn--primary" download>
+          ↓ Academic CV
+        </a>
+        <a href="Aayush_Randeep_CV_job.pdf" class="btn btn--primary" style="background: var(--gradient-warm); box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);" download>
+          ↓ Industry CV
+        </a>
+        <a href="#research" class="btn btn--outline">
+          Explore Research →
+        </a>
+      </div>
+      <div class="hero__scroll">
+        <span>SCROLL</span>
+        <div class="arrow"></div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about">
+      <div class="reveal">
+        <p class="section__label">About Me</p>
+        <h2 class="section__title">Simulating the Universe,<br>One Grid Cell at a Time</h2>
+      </div>
+      <div class="about__content reveal">
+        <div class="about__text">
+          <p>
+            I'm a <strong>final-year BS-MS student</strong> at the
+            <strong>Indian Institute of Science Education and Research, Bhopal</strong>,
+            majoring in Physics with a CPI of <strong>9.11/10</strong>.
+          </p>
+          <br>
+          <p>
+            My research lives at the intersection of <strong>computational cosmology</strong>,
+            <strong>high performance computing</strong>, and <strong>scientific software development</strong>
+            for cosmological simulations. I build and optimize <strong>solvers for PDEs</strong> arising
+            in physics simulations — targeting performance at the hardware level through techniques like
+            compute culling, cache-aware scheduling, multigrid acceleration, and adaptive domain decomposition.
+          </p>
+          <br>
+          <p>
+            I'm equally drawn to <strong>theoretical cosmology</strong> — from modified inflationary models
+            to lattice simulations — and to <strong>scientific computing as engineering</strong>: writing
+            GPU-accelerated solvers, memory-efficient algorithms, and parallel code that scales on
+            heterogeneous architectures.
+          </p>
+        </div>
+        <div class="about__highlights">
+          <div class="highlight-card">
+            <div class="highlight-card__label">Current Focus</div>
+            <div class="highlight-card__value">Modified Inflationary Models & HPC Lattice Simulations</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-card__label">Institution</div>
+            <div class="highlight-card__value">IISER Bhopal — Physics Major</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-card__label">CPI</div>
+            <div class="highlight-card__value">9.11 / 10</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-card__label">Looking For</div>
+            <div class="highlight-card__value">PhD in Computational Cosmology &amp; Roles in Scientific Computing</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RESEARCH ========== -->
+    <section class="section" id="research">
+      <div class="reveal">
+        <p class="section__label">Research Experience</p>
+        <h2 class="section__title">Where I've Been Working</h2>
+      </div>
+      <div class="timeline">
+
+        <!-- MS Thesis -->
+        <div class="timeline__item reveal">
+          <div class="timeline__header">
+            <div class="timeline__role">MS Thesis — Dr. Rajib Saha</div>
+            <div class="timeline__meta">May 2025 – Present</div>
+          </div>
+          <div class="timeline__org">Indian Institute of Science Education and Research, Bhopal</div>
+          <ul class="timeline__details">
+            <li>Developed high-performance C++ solvers for inflationary perturbation equations, implementing the Mukhanov-Sasaki formalism with adaptive e-fold sampling and Bunch-Davies initial conditions to extract the primordial power spectrum P<sub>ζ</sub>(k)</li>
+            <li>Built a NMDC Model of inflation with Ricci Tensor as the Curvature Tensor</li>
+            <li>Formulated a consistent expansion scheme to incorporate higher-order curvature-induced terms in generalized NMDC models, preserving predictive stability of inflationary dynamics</li>
+            <li>Constrained model parameters using ACT likelihood data and evaluated consistency with observational bounds on n<sub>s</sub> and r</li>
+            <li>"Testing the NMDC models of inflation in the light of the latest ACT observations" — Draft completed</li>
+            <li>Studying the resulting power spectrum in modified inflation models through HPC simulations in beyond slow roll setting</li>
+          </ul>
+        </div>
+
+        <!-- IIT BHU -->
+        <div class="timeline__item reveal">
+          <div class="timeline__header">
+            <div class="timeline__role">Research Intern — Dr. Bidya Binay Karak</div>
+            <div class="timeline__meta">May 2024 – Jun 2024</div>
+          </div>
+          <div class="timeline__org">IIT BHU, Varanasi</div>
+          <ul class="timeline__details">
+            <li>8-week onsite internship on the Param Shivay Supercomputer for simulating Solar Dynamo</li>
+            <li>Rewrote STABLE code for Sun-like stars; identified stable radius regime for solar dynamo behavior while showing negligible dependence on time period</li>
+            <li>Worked on Surya Code for simulating 2-D Solar Dynamo incorporating Lambda Effect</li>
+            <li>Tools: FORTRAN, Linux Bash, HPC cluster</li>
+          </ul>
+        </div>
+
+        <!-- IIT Indore -->
+        <div class="timeline__item reveal">
+          <div class="timeline__header">
+            <div class="timeline__role">Research Intern — Dr. Priyanka Singh</div>
+            <div class="timeline__meta">May 2024 – Jul 2024</div>
+          </div>
+          <div class="timeline__org">IIT Indore</div>
+          <ul class="timeline__details">
+            <li>Hybrid internship (4 weeks onsite + 8 weeks remote) in X-Ray Astronomy and astronomical datasets</li>
+            <li>Performed AGN Data Analysis on eROSITA observations</li>
+            <li>Validated LADE model predictions against eROSITA AGN observations, finding near-perfect agreement between theoretical distribution and observational data</li>
+            <li>Tools: Python, Astropy, HEALPix, Colossus, SciPy, NumPy</li>
+          </ul>
+        </div>
+
+        <!-- Winter Intern -->
+        <div class="timeline__item reveal">
+          <div class="timeline__header">
+            <div class="timeline__role">Winter Intern — Dr. Mayuresh Surnis</div>
+            <div class="timeline__meta">Dec 2023 – Jan 2024</div>
+          </div>
+          <div class="timeline__org">IISER Bhopal</div>
+          <ul class="timeline__details">
+            <li>Studied fundamentals of Radio Astronomy</li>
+            <li>Learned Astropy applications for analyzing SDSS Data</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="section" id="projects">
+      <div class="reveal">
+        <p class="section__label">Projects</p>
+        <h2 class="section__title">Things I've Built</h2>
+      </div>
+      <div class="projects__grid">
+
+        <div class="project-card reveal">
+          <div class="project-card__icon">🌊</div>
+          <h3 class="project-card__title">Game-Engine-Inspired Navier-Stokes Solver</h3>
+          <p class="project-card__desc">
+            Solving PDEs on memory-constrained systems by emulating game engine resource management.
+            Implemented 10 hardware-aware optimizations including multigrid V-cycles, adaptive compute culling
+            (92.2% tiles skipped, 97% work saved), cache-friendly refetching, delta-encoded halo compression,
+            and preallocated memory pools (0 runtime mallocs). GPU acceleration in active development targeting ROCm/HIP.
+          </p>
+          <div class="project-card__stats">
+            <span class="stat-badge">248× memory reduction</span>
+            <span class="stat-badge">416 MB → 1.68 MB</span>
+            <span class="stat-badge">2.28× speedup (16-thread OpenMP)</span>
+            <span class="stat-badge">2.5× faster pressure solve</span>
+            <span class="stat-badge">O(1) memory cost</span>
+          </div>
+          <a href="https://github.com/aayush21-work" class="project-card__link" target="_blank" rel="noopener">
+            View on GitHub →
+          </a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card__icon">🧠</div>
+          <h3 class="project-card__title">Neural-Numerical: Hybrid ML Root Finder</h3>
+          <p class="project-card__desc">
+            Hybrid solver using a neural network to provide warm-start initial guesses for Newton-Raphson,
+            eliminating convergence failures. Working on making it suitable for stiff functions.
+          </p>
+          <div class="project-card__stats">
+            <span class="stat-badge">1.33× speedup</span>
+            <span class="stat-badge">1.45× fewer iterations</span>
+            <span class="stat-badge">100% convergence</span>
+          </div>
+          <a href="https://github.com/aayush21-work" class="project-card__link" target="_blank" rel="noopener">
+            View on GitHub →
+          </a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card__icon">〰️</div>
+          <h3 class="project-card__title">N-Dimensional Wave Equation Analysis</h3>
+          <p class="project-card__desc">
+            Studied PDEs, Real Analysis and Multivariable Calculus in N dimensions.
+            Developed intuition for qualitative PDE analysis — extracting physical properties
+            of wave systems without explicit solution.
+          </p>
+          <div class="project-card__stats">
+            <span class="stat-badge">1-D, 2-D, 3-D analytical solutions</span>
+            <span class="stat-badge">Qualitative PDE analysis</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="section" id="skills">
+      <div class="reveal">
+        <p class="section__label">Technical Skills</p>
+        <h2 class="section__title">Tools of the Trade</h2>
+      </div>
+      <div class="reveal">
+        <div class="skills__group">
+          <h3 class="skills__group-title">Programming Languages</h3>
+          <div class="skills__pills">
+            <span class="skill-pill skill-pill--proficient">C</span>
+            <span class="skill-pill skill-pill--proficient">C++</span>
+            <span class="skill-pill skill-pill--proficient">Python</span>
+            <span class="skill-pill skill-pill--proficient">FORTRAN</span>
+            <span class="skill-pill skill-pill--proficient">Java</span>
+            <span class="skill-pill">Julia</span>
+            <span class="skill-pill">CUDA</span>
+          </div>
+        </div>
+        <div class="skills__group">
+          <h3 class="skills__group-title">Scientific & HPC Tools</h3>
+          <div class="skills__pills">
+            <span class="skill-pill skill-pill--proficient">Mathematica</span>
+            <span class="skill-pill skill-pill--proficient">MCMC Analysis</span>
+            <span class="skill-pill">CLASS</span>
+            <span class="skill-pill">COBAYA</span>
+            <span class="skill-pill">OpenMPI</span>
+            <span class="skill-pill">Parallel Programming</span>
+            <span class="skill-pill">Machine Learning</span>
+            <span class="skill-pill">OpenGL</span>
+            <span class="skill-pill">Vulkan</span>
+          </div>
+        </div>
+        <div class="skills__group">
+          <h3 class="skills__group-title">Systems & Miscellaneous</h3>
+          <div class="skills__pills">
+            <span class="skill-pill skill-pill--proficient">Linux</span>
+            <span class="skill-pill">Supercomputing & HPC</span>
+            <span class="skill-pill">Bash Scripting</span>
+            <span class="skill-pill">Game Development</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EDUCATION ========== -->
+    <section class="section" id="education">
+      <div class="reveal">
+        <p class="section__label">Education</p>
+        <h2 class="section__title">Academic Background</h2>
+      </div>
+      <div class="edu-card reveal">
+        <h3 class="edu-card__institution">Indian Institute of Science Education and Research, Bhopal</h3>
+        <p class="edu-card__degree">BS-MS in Physics — Final Year</p>
+        <p class="edu-card__date">December 2021 – Present</p>
+        <p class="edu-card__detail">Cumulative Performance Index: <strong>9.11 / 10</strong></p>
+        <p class="edu-card__detail">Thesis: Modified Inflationary Models & HPC Lattice Simulations</p>
+
+        <div class="skills__group" style="margin-top: 1.5rem;">
+          <h3 class="skills__group-title">Relevant Coursework</h3>
+          <div class="coursework__grid">
+            <span class="skill-pill">C Programming</span>
+            <span class="skill-pill">Physics Through Computational Thinking</span>
+            <span class="skill-pill">Numerical Methods & Programming</span>
+            <span class="skill-pill">General Relativity</span>
+            <span class="skill-pill">QFT I</span>
+            <span class="skill-pill">Intro to Astronomy & Astrophysics</span>
+            <span class="skill-pill">Cosmology I</span>
+            <span class="skill-pill">Data Science In Practice</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PUBLICATIONS ========== -->
+    <section class="section" id="publications">
+      <div class="reveal">
+        <p class="section__label">Publications & Presentations</p>
+        <h2 class="section__title">Work in Progress</h2>
+      </div>
+
+      <div class="pub-card reveal">
+        <div class="pub-card__type">Paper — Draft Completed</div>
+        <h3 class="pub-card__title">"Testing the NMDC models of inflation in the light of the latest ACT observations"</h3>
+        <p class="pub-card__desc">
+          Built a NMDC model of inflation with Ricci Tensor coupling and constrained model parameters
+          using ACT likelihood data. Evaluated consistency with observational bounds on n<sub>s</sub> and r.
+        </p>
+      </div>
+
+      <div class="pub-card reveal">
+        <div class="pub-card__type">Poster Presentation</div>
+        <h3 class="pub-card__title">"Cosmic Inflation: The Story of the Beginning of Everything"</h3>
+        <p class="pub-card__desc">
+          Presented at the In-House Physics Symposium 2026. Covered NMDC inflation with Ricci tensor coupling;
+          results shown to be consistent with ACT DR6 observations.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section contact" id="contact">
+      <div class="reveal">
+        <h2 class="contact__heading">Let's Connect</h2>
+        <p class="contact__sub">
+          I'm actively seeking PhD positions in computational cosmology and
+          roles in scientific computing & software development.
+          Feel free to reach out — I'd love to hear about opportunities.
+        </p>
+      </div>
+      <div class="contact__links reveal">
+        <a href="mailto:aayush21@iiserb.ac.in" class="contact__link">
+          ✉ aayush21@iiserb.ac.in
+        </a>
+        <a href="https://github.com/aayush21-work" class="contact__link" target="_blank" rel="noopener">
+          ⌂ GitHub
+        </a>
+        <a href="https://linkedin.com/in/aayush.randeep" class="contact__link" target="_blank" rel="noopener">
+          ⌘ LinkedIn
+        </a>
+        <a href="Aayush_Randeep_CV_0226.pdf" class="contact__link" download>
+          ↓ Academic CV
+        </a>
+        <a href="Aayush_Randeep_CV_job.pdf" class="contact__link" download>
+          ↓ Industry CV
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Aayush Randeep · Built with passion for the cosmos</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
